@@ -658,280 +658,6 @@ body {
         padding: 2rem 1rem;
     }
 }
-.udid-showcase {
-    background: var(--gradient-surface);
-    border-radius: var(--radius-xl);
-    padding: 3rem;
-    margin: 2rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.udid-showcase::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        var(--primary-light) 0%,
-        transparent 70%
-    );
-    opacity: 0.05;
-    animation: rotate 20s linear infinite;
-}
-
-.udid-card-container {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
-    transition: transform 0.3s ease;
-}
-
-.udid-card-container:hover {
-    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
-}
-
-.udid-card {
-    background: white;
-    border-radius: 15px;
-    padding: 0;
-    color: #333;
-    box-shadow: var(--shadow-xl);
-    max-width: 480px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid var(--gray-200);
-    font-family: "Arial", sans-serif;
-    aspect-ratio: 1.67/1;
-}
-
-.udid-card-inner {
-    position: relative;
-    height: 100%;
-    display: flex;
-}
-
-.udid-left-stripe {
-    width: 28px;
-    background: var(--gradient-primary);
-    flex-shrink: 0;
-}
-
-.udid-main-content {
-    flex: 1;
-    padding: 16px 18px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.udid-header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 16px;
-}
-
-.udid-title-area {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.udid-emblem-gold {
-    width: 36px;
-    height: 44px;
-    background: var(--gradient-accent);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: var(--shadow);
-    position: relative;
-}
-
-.udid-emblem-gold::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: radial-gradient(circle, #fcd34d 30%, #f59e0b 70%);
-    border-radius: 3px;
-}
-
-.udid-emblem-gold::after {
-    content: "🏛️";
-    position: absolute;
-    font-size: 14px;
-    z-index: 1;
-}
-
-.udid-title-area-text {
-    padding-top: 2px;
-}
-
-.udid-main-title {
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--gray-900);
-    margin: 0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    line-height: 1.1;
-}
-
-.udid-sub-title {
-    font-size: 11px;
-    color: var(--gray-600);
-    margin: 2px 0 0 0;
-    font-weight: 500;
-}
-
-.udid-govt-seal-green {
-    width: 60px;
-    height: 60px;
-    background: white;
-    border: 2px solid var(--success);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.udid-govt-seal-green::before {
-    content: "";
-    width: 48px;
-    height: 48px;
-    border: 1px dashed var(--success);
-    border-radius: 50%;
-    position: absolute;
-}
-
-.udid-govt-seal-green::after {
-    content: "✓";
-    position: absolute;
-    color: var(--success);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.udid-body-content {
-    display: flex;
-    gap: 16px;
-    flex: 1;
-}
-
-.udid-info-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.udid-photo-section {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    width: 90px;
-}
-
-.udid-info-row {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-}
-
-.udid-info-row-double {
-    display: flex;
-    gap: 20px;
-}
-
-.udid-info-row-double .udid-info-row {
-    flex: 1;
-}
-
-.udid-label-text {
-    font-size: 9px;
-    color: var(--secondary);
-    font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0.1px;
-}
-
-.udid-value-text {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--gray-900);
-    letter-spacing: 0.1px;
-}
-
-.udid-name-bilingual {
-    font-size: 12px !important;
-    font-weight: 800 !important;
-    line-height: 1.2;
-}
-
-.udid-id-number {
-    font-family: "Courier New", monospace !important;
-    font-size: 14px !important;
-    letter-spacing: 0.8px !important;
-    font-weight: 800 !important;
-}
-
-.udid-photo-frame {
-    width: 75px;
-    height: 85px;
-    background: var(--gray-50);
-    border: 2px solid var(--gray-300);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.udid-photo-frame::before {
-    content: "PHOTO\ASPECIMEN";
-    white-space: pre;
-    text-align: center;
-    font-size: 8px;
-    color: var(--gray-500);
-    font-weight: 600;
-}
-
-.udid-status-circle {
-    width: 28px;
-    height: 28px;
-    background: var(--success);
-    border: 2px solid white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 900;
-    font-size: 14px;
-    box-shadow: var(--shadow);
-}
-
-.blur-text {
-    filter: blur(2px);
-    user-select: none;
-}
 
 /* Feature Lists */
 .feature-grid {
@@ -1125,6 +851,20 @@ body {
     box-shadow: var(--shadow);
 }
 
+/* Sample Notice */
+.sample-notice-external {
+    font-size: 0.85rem;
+    color: var(--warning);
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(212, 165, 116, 0.1);
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -1187,10 +927,6 @@ body {
 
     .udid-showcase {
         padding: 2rem 1rem;
-    }
-
-    .udid-card-container {
-        transform: none;
     }
 
     .indrani-signature {
